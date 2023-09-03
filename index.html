@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ayush Tiwari</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">about</a></li>
+                <li><a href="#Experience">experience</a></li>
+                <li><a href="#Projects">projects</a></li>
+                <li><a href="#Content">content</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ayush Tiwari</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">about</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#Content" onclick="toggleMenu()">content</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/mypic1.png" alt="Ayush Tiwari profile picture" />
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Ayush Tiwari</h1>
+            <p class="section_text_p2"> Aspiring Full Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/ayush-tiwari-222123251/'">
+                    <img src="./assets/github.png" alt="My linkedin Profile" class="icon"
+                    onclick="location.href='https://github.com/tiwayush'">
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1"Get To Know More></p>
+        <h1 class="title"About Me></h1>
+        <div class="section-container">
+        <div class="section_pic-container">
+            <img src="./assets/about pic.jpg" alt="profile picture" class="about-pic"> 
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p> Beginner <br>Frontend Development</p></div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B-Tech in Computer Science and Engineering<br>Vellore Institute Of Technology</p>
+                    </div>
+                    
+                </div>
+                <div class="text-container">
+                    <p>I'm currently a budding enthusiast in the world of web development, pursuing a Bachelor's degree in Computer Science and Engineering. Eager to unravel the mysteries of coding and design, I've taken my first steps into the captivating realm of Full Stack Development. Despite being new to this exciting journey, I am deeply committed to honing my skills and embracing every learning opportunity that comes my way. With a passion for problem-solving and a determination to grasp the intricacies of web development, I'm excited to embark on this adventure and create my digital footprint. Join me as I explore the art and science of crafting websites that leave a mark while constantly expanding my horizons in the ever-evolving landscape of technology.</p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow-icon" class="icon arrow" onclick="location.href='/project'">
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
